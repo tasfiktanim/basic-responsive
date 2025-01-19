@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left-Right</title>
+    <style>
+        .l-r{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        .left
+        {
+            border-radius: 15px;
+            background-color: gray;
+            height: 400px;
+            width: 15%;
+            text-align: center;
+        }
+
+        .cont{
+            margin: 200px 0px;
+        }
+        
+        .Right{
+            border-radius: 15px;
+            background-color: aquamarine;
+            height: 400px;
+            width: 30%;
+            text-align: center;
+            
+        }
+
+       @media screen and (max-width: 576px)  {
+        .l-r{
+            flex-direction: column;
+        }
+        
+       } 
+        
+            
+        
+    </style>
+</head>
+<body class="l-r">
+    <div class="left">
+        <h3 class="cont">Left</h3>
+    </div>
+    <div class="Right">
+        <h3 class="cont">Right</h3>
+    </div>
+    
+</body>
+</html>
