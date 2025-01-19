@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Image</title>
+    <style>
+        .display{
+            display: flex;
+            gap: 10px;
+        }
+        .cont{
+            margin: 70px auto;
+        }
+        .btn{
+            background-color: aqua;
+            border: none;
+            padding: 20px 30px;
+            font-weight: 700;    
+        }
+        
+        @media screen  and (max-width: 576px) {
+            .cont-1, .cont-2{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <div class="cont-1 display">
+            <div>
+                <img src="assets/satelite.png" alt="">
+            </div>
+            <div class="cont">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi repellendus voluptatem doloribus fugiat delectus asperiores sunt id, praesentium suscipit laborum nam quae ducimus a facere qui temporibus, cupiditate omnis.</p>
+            <button class="btn">Read More</button>
+            </div>
+                
+        </div>
+        <div class="cont-2 display">
+            <div>
+                <img src="assets/satelite.png" alt="">
+            </div>
+            <div class="cont">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi repellendus voluptatem doloribus fugiat delectus asperiores sunt id, praesentium suscipit laborum nam quae ducimus a facere qui temporibus, cupiditate omnis.</p>
+            <button class="btn">Read More</button>
+        </div>
+    </section>
+</body>
+</html>

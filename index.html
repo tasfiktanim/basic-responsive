@@ -6,9 +6,10 @@
     <title>Left-Right</title>
     <style>
         .l-r{
-            display: flex;
+            display: grid;
             gap: 24px;
             align-items: center;
+            grid-template-columns: none;
         }
         .left
         {
@@ -27,20 +28,17 @@
             border-radius: 15px;
             background-color: aquamarine;
             height: 400px;
-            width: 30%;
+            width: 100%;
             text-align: center;
             
         }
 
        @media screen and (max-width: 576px)  {
         .l-r{
-            flex-direction: column;
+            grid-template-columns: none;
         }
         
-       } 
-        
-            
-        
+       }  
     </style>
 </head>
 <body class="l-r">
